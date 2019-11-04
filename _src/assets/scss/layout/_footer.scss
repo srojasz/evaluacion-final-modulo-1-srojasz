@@ -1,0 +1,36 @@
+.footer {
+  background-color: #304268;
+  font-family: $fontFamilyText;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  position: relative;
+
+  &__content {
+    color: white;
+  }
+
+  &__sections {
+    margin-bottom: 2rem;
+    border: 2px solid red;
+  }
+
+  &__social {
+    border: 2px solid yellow;
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &__copy {
+    border: 2px solid white;
+  }
+}
