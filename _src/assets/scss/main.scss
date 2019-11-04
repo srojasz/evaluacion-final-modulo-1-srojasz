@@ -1,2 +1,8 @@
 @import "core/reset";
+@import "components/buttons";
 @import "layout/header";
+@import "layout/main-header";
+
+.container {
+  margin: 0 1.5rem;
+}

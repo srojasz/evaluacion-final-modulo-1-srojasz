@@ -2,33 +2,37 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Final test</title>
     <link rel="icon" href="./favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
     <partial src="_header.html"></partial>
-    <main class="main">
-      <partial src="_main-header.html"></partial>
-      <section class="main__reasons">
-        <h2 class="main__reasons--title">
-          3 reasons to purchase
-        </h2>
-        <article class="reasons__card">
-          <h3 class="reasons__card--title">
-            Ut sed metus
-          </h3>
-          <p class="reasons__card--text">
-            Lorem ipsum dolor sit amet, consecteur.
-          </p>
-        </article>
-        <button class="main__reasons--button">
-          More reasons
-        </button>
-      </section>
-    </main>
+    <div class="container">
+      <main class="main">
+        <partial src="_main-header.html"></partial>
+        <section class="main__reasons">
+          <h2 class="main__reasons--title">
+            3 reasons to purchase
+          </h2>
+          <article class="reasons__card">
+            <h3 class="reasons__card--title">
+              Ut sed metus
+            </h3>
+            <p class="reasons__card--text">
+              Lorem ipsum dolor sit amet, consecteur.
+            </p>
+          </article>
+          <button class="main__reasons--button">
+            More reasons
+          </button>
+        </section>
+      </main>
+    </div>
     <footer class="footer">
       <button class="footer__button">
         <img src="./assets/images/ico-arrow.svg" />

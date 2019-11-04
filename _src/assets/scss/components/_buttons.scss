@@ -1,0 +1,20 @@
+/* Buttons */
+
+.main__header--button {
+  width: 7.6rem;
+  height: 4.5rem;
+  border-radius: 2.25rem;
+  border: 2px solid #f26002;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.25;
+  color: #f26002;
+  transition: all ease 0.4s;
+
+  &:hover {
+    background-color: #f26002;
+    color: white;
+  }
+}
