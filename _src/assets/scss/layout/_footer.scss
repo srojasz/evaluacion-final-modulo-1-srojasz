@@ -4,19 +4,20 @@
   font-size: 1.8rem;
   color: white;
   text-align: center;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__content {
     color: white;
   }
 
   &__sections {
-    margin-bottom: 2rem;
-    border: 2px solid red;
+    margin-bottom: 3rem;
   }
 
   &__social {
-    border: 2px solid yellow;
     margin-bottom: 3rem;
   }
 
@@ -24,13 +25,30 @@
     list-style: none;
   }
 
+  &__item {
+    line-height: 3rem;
+    font-size: 1.6rem;
+  }
+
   &__link {
     text-decoration: none;
+    padding: 0.3rem 1rem;
     color: white;
     text-transform: uppercase;
+    transition: all ease 0.5s;
+
+    &:hover {
+      background-color: $colorItems;
+      border-radius: 2.25rem;
+    }
   }
 
   &__copy {
-    border: 2px solid white;
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+
+  &__heart {
+    color: $colorItems;
   }
 }
