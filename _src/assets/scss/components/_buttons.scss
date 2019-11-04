@@ -1,5 +1,28 @@
 /* Buttons */
 
+.header__button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4.4rem;
+  height: 4.4rem;
+  background-color: #0271bc;
+}
+
+.hero__content--button {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5.3rem 0;
+
+  .hero__img {
+    padding-top: 0.7rem;
+    text-align: center;
+  }
+}
+
 .main__header--button {
   width: 7.6rem;
   height: 4.5rem;

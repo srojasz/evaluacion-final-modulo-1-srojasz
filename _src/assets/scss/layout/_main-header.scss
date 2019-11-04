@@ -1,17 +1,19 @@
+/* Main Header */
+
 .main__header {
   text-align: left;
   width: 100%;
   margin: 3rem 0 4.5rem 0;
 
   &--small {
-    font-family: "Roboto", serif;
+    font-family: $fontFamilyText;
     font-size: 1.4rem;
     line-height: 3rem;
     color: #8ccbea;
     margin-bottom: 1rem;
   }
   &--title {
-    font-family: "Roboto Slab", serif;
+    font-family: $fontFamilyTitle;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 3rem;
@@ -20,7 +22,7 @@
   }
 
   &--text {
-    font-family: "Roboto", sans-serif;
+    font-family: $fontFamilyText;
     font-size: 1.8rem;
     line-height: 3rem;
     color: #4a4a4a;

@@ -1,0 +1,47 @@
+/* Main reasons */
+
+.main__reasons {
+  text-align: center;
+  padding-top: 3rem;
+  background-color: #eff9ff;
+
+  &--title {
+    font-family: $fontFamilyTitle;
+    font-weight: bold;
+    font-size: 2.4rem;
+    border: solid 3px orange;
+    margin: 0 auto;
+    text-transform: capitalize;
+  }
+
+  .cards__container {
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 18rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reasons__card {
+    border: 2px solid pink;
+    width: 180px;
+    margin: 4.5rem 0;
+
+    &--title {
+      font-family: $fontFamilyTitle;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      color: #000000;
+    }
+
+    &--text {
+      font-family: $fontFamilyText;
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+
+    & .reason1 {
+    }
+  }
+}

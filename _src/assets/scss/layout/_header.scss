@@ -1,14 +1,7 @@
+/* Header */
+
 .header {
   height: 100vh;
-
-  &__button {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 4.4rem;
-    height: 4.4rem;
-    background-color: #0271bc;
-  }
 }
 
 .hero__container {
@@ -41,13 +34,5 @@
     font-family: "Roboto", serif;
     font-size: 1.6rem;
     line-height: 2.1rem;
-  }
-
-  &--button {
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    margin: 5.3rem 0;
   }
 }
