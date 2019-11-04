@@ -61,6 +61,14 @@
   border: 0;
   transition: all ease 1s;
 
+  @media all and (min-width: 768px) {
+    width: 21rem;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 25.5rem;
+  }
+
   &:hover {
     transform: scale(1.2);
   }

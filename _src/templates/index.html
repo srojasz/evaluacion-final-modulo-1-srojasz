@@ -12,24 +12,22 @@
   </head>
   <body>
     <partial src="_header.html"></partial>
-    <div class="container">
-      <main class="main">
-        <partial src="_main-header.html"></partial>
-        <section class="main__reasons">
-          <h2 class="main__reasons--title">
-            3 reasons to purchase
-          </h2>
-          <div class="cards__container">
-            <partial item-class="reason1" src="_main-reasons.html" card-title="Ut sed metus" card-text="Lorem ipsum dolor sit amet, consecteur."></partial>
-            <partial item-class="reason2" src="_main-reasons.html" card-title="Curabitur ac erat" card-text="Mauris mattis urna quis lorem molestie"></partial>
-            <partial item-class="reason3" src="_main-reasons.html" card-title="Morbi dictum" card-text="Aliquam in dolor et dolor tincidunt."></partial>
-          </div>
-          <button class="main__reasons--button">
-            More reasons
-          </button>
-        </section>
-      </main>
-    </div>
+    <main class="main">
+      <partial src="_main-header.html"></partial>
+      <section class="main__reasons">
+        <h2 class="main__reasons--title">
+          3 reasons to purchase
+        </h2>
+        <div class="cards__container">
+          <partial src="_main-reasons.html" card-title="Ut sed metus" card-text="Lorem ipsum dolor sit amet, consecteur."></partial>
+          <partial src="_main-reasons.html" card-title="Curabitur ac erat" card-text="Mauris mattis urna quis lorem molestie"></partial>
+          <partial src="_main-reasons.html" card-title="Morbi dictum" card-text="Aliquam in dolor et dolor tincidunt."></partial>
+        </div>
+        <button class="main__reasons--button">
+          More reasons
+        </button>
+      </section>
+    </main>
     <partial src="_footer.html"></partial>
   </body>
 </html>

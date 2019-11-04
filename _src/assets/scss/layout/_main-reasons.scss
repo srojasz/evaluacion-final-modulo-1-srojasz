@@ -2,15 +2,24 @@
 
 .main__reasons {
   text-align: center;
-  padding: 3rem 0 6rem 0;
+  padding: 3rem 1.5rem 6rem 1.5rem;
   background-color: #eff9ff;
 
   &--title {
     font-family: $fontFamilyTitle;
     font-weight: bold;
     font-size: 2.4rem;
+    line-height: 3rem;
     margin: 0 auto 4.5rem 0;
     text-transform: capitalize;
+
+    @media all and (min-width: 768px) {
+      font-size: 2.6rem;
+      line-height: 4.5rem;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 3.2rem;
+    }
   }
 
   .cards__container {
@@ -19,6 +28,18 @@
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+
+    @media all and (min-width: 768px) {
+      grid-template-columns: repeat(3, 21.23rem);
+      grid-template-rows: 1fr;
+      grid-gap: 3rem;
+    }
+
+    @media all and (min-width: 1200px) {
+      grid-template-columns: repeat(3, 35rem);
+      grid-template-rows: 1fr;
+      grid-gap: 3rem;
+    }
   }
 
   .reasons__card {
@@ -29,15 +50,20 @@
       font-size: 1.8rem;
       line-height: 3rem;
       color: #000000;
+
+      @media all and (min-width: 768px) {
+        font-size: 2.4rem;
+      }
     }
 
     &--text {
       font-family: $fontFamilyText;
       font-size: 1.8rem;
       line-height: 3rem;
-    }
 
-    & .reason1 {
+      @media all and (min-width: 768px) {
+        font-size: 2rem;
+      }
     }
   }
 }

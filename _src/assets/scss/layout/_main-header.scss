@@ -4,6 +4,7 @@
   text-align: left;
   width: 100%;
   margin: 3rem 0 4.5rem 0;
+  padding: 0 1.5rem;
 
   &--small {
     font-family: $fontFamilyText;
@@ -15,34 +16,34 @@
     @media all and (min-width: 1200px) {
       font-size: 1.6rem;
     }
-    &--title {
-      font-family: $fontFamilyTitle;
-      font-size: 2.4rem;
-      font-weight: bold;
-      line-height: 3rem;
-      text-transform: capitalize;
-      margin-bottom: 1.5rem;
+  }
+  &--title {
+    font-family: $fontFamilyTitle;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
 
-      @media all and (min-width: 768px) {
-        font-size: 2.6rem;
-        line-height: 4.5rem;
-      }
-
-      @media all and (min-width: 1200px) {
-        font-size: 3.2rem;
-      }
+    @media all and (min-width: 768px) {
+      font-size: 2.6rem;
+      line-height: 4.5rem;
     }
 
-    &--text {
-      font-family: $fontFamilyText;
-      font-size: 1.8rem;
-      line-height: 3rem;
-      color: #4a4a4a;
-      margin-bottom: 3rem;
+    @media all and (min-width: 1200px) {
+      font-size: 3.2rem;
+    }
+  }
 
-      @media all and (min-width: 768px) {
-        font-size: 2rem;
-      }
+  &--text {
+    font-family: $fontFamilyText;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #4a4a4a;
+    margin-bottom: 3rem;
+
+    @media all and (min-width: 768px) {
+      font-size: 2rem;
     }
   }
 }
