@@ -2,16 +2,99 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Adalab Web Starter Kit</title>
+    <title>Final test</title>
     <link rel="icon" href="./favicon.png" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <div class="page">
-      <partial src="_header.html" label="Header"></partial>
-      <partial src="_main.html" label="Main"></partial>
-      <partial src="_link.html" aClass="link__adalab" text="Adalab" url="https://adalab.es"></partial>
-      <partial src="_link.html" aClass="link__github" text="GitHub" url="https://github.com"></partial>
-    </div>
+    <header class="header">
+      <button class="header__button">
+        <img class="header__button--img" src="./assets/images/ico-menu.svg" />
+      </button>
+      <section class="hero__container">
+        <article class="hero__content">
+          <h1 class="hero__content--title">anonymous proxy</h1>
+          <p class="hero__content--text">In hac habitasse platea dictumst</p>
+          <button class="hero__content--button"><img class="hero__img" src="./assets/images/ico-scroll-down.svg" /></button>
+        </article>
+      </section>
+    </header>
+    <main class="main">
+      <section class="main__header">
+        <small class="main__header--small">
+          insomnia tips
+        </small>
+        <h2 class="main__header--title">
+          looking through a window
+        </h2>
+        <p class="main__header--text">
+          Donec accumsan, nulla ut volutpat portitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+        </p>
+        <button class="main__header--button">
+          Go
+        </button>
+      </section>
+      <section class="main__reasons">
+        <h2 class="main__reasons--title">
+          3 reasons to purchase
+        </h2>
+        <article class="reasons__card">
+          <h3 class="reasons__card--title">
+            Ut sed metus
+          </h3>
+          <p class="reasons__card--text">
+            Lorem ipsum dolor sit amet, consecteur.
+          </p>
+        </article>
+        <button class="main__reasons--button">
+          More reasons
+        </button>
+      </section>
+    </main>
+    <footer class="footer">
+      <button class="footer__button">
+        <img src="./assets/images/ico-arrow.svg" />
+      </button>
+      <section class="footer__sections">
+        <ul class="footer__sections--list">
+          <li class="footer__sections--item">
+            <a href="#" title="">articles</a>
+          </li>
+          <li class="footer__sections--item">
+            <a href="#" title="">books</a>
+          </li>
+          <li class="footer__sections--item">
+            <a href="#" title="">events</a>
+          </li>
+          <li class="footer__sections--item">
+            <a href="#" title="">reasons</a>
+          </li>
+          <li class="footer__sections--item">
+            <a href="#" title="">tips</a>
+          </li>
+        </ul>
+      </section>
+      <aside class="footer__social">
+        <ul class="footer__social--list">
+          <li class="footer__social--item">
+            <a href="#" title="">events</a>
+          </li>
+          <li class="footer__social--item">
+            <a href="#" title="">reasons</a>
+          </li>
+          <li class="footer__social--item">
+            <a href="#" title="">tips</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="footer__copy">
+        <p class="footer__copy--year">
+          &copy2017
+        </p>
+        <small class="footer__copy--text">
+          We ❤ components
+        </small>
+      </section>
+    </footer>
   </body>
 </html>
