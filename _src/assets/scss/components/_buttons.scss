@@ -27,17 +27,34 @@
   width: 7.6rem;
   height: 4.5rem;
   border-radius: 2.25rem;
-  border: 2px solid #f26002;
+  border: 2px solid $colorItems;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 2rem;
   line-height: 2.25;
-  color: #f26002;
+  color: $colorItems;
   transition: all ease 0.4s;
 
   &:hover {
-    background-color: #f26002;
+    background-color: $colorItems;
     color: white;
+  }
+}
+
+.main__reasons--button {
+  width: 18.4rem;
+  height: 4.5rem;
+  background-color: $colorItems;
+  border-radius: 2.25rem;
+  font-family: $fontFamilyText;
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+  border: 0;
+  transition: all ease 1s;
+
+  &:hover {
+    transform: scale(1.3);
   }
 }
