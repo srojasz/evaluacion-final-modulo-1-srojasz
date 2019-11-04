@@ -7,6 +7,10 @@
   width: 4.4rem;
   height: 4.4rem;
   background-color: #0271bc;
+
+  &--img {
+    padding: 1rem;
+  }
 }
 
 .hero__content--button {
@@ -16,10 +20,16 @@
   border-radius: 50%;
   background-color: #fff;
   margin: 5.3rem auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  & a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__img {
+    padding: 1rem;
+  }
 }
 
 .main__header--button {
@@ -45,7 +55,15 @@
 
   &:hover {
     background-color: $colorItems;
-    color: white;
+  }
+
+  & a {
+    color: $colorItems;
+    padding: 1rem;
+
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -71,6 +89,12 @@
 
   &:hover {
     transform: scale(1.2);
+    color: white;
+  }
+
+  & a {
+    color: white;
+    padding: 1rem;
   }
 }
 
@@ -81,9 +105,13 @@
   border: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   transform: translateY(-50%);
+
+  & a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
 }
