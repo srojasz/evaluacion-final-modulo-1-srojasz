@@ -13,14 +13,38 @@
 
   &__content {
     color: white;
+    padding-top: 6rem;
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-top: 4.5rem;
+      justify-content: space-around;
+      text-align: left;
+    }
   }
 
   &__sections {
     margin-bottom: 3rem;
+
+    @media all and (min-width: 768px) {
+      width: 21rem;
+      order: 2;
+    }
+
+    @media all and (min-width: 1200px) {
+      width: 16rem;
+    }
   }
 
   &__social {
     margin-bottom: 3rem;
+
+    @media all and (min-width: 768px) {
+      width: 21rem;
+    }
+    @media all and (min-width: 1200px) {
+      width: 16rem;
+    }
   }
 
   &__list {
@@ -48,6 +72,14 @@
   &__copy {
     font-size: 1.4rem;
     line-height: 3rem;
+
+    @media all and (min-width: 768px) {
+      width: 21rem;
+      order: 3;
+    }
+    @media all and (min-width: 1200px) {
+      width: 16rem;
+    }
   }
 
   &__heart {
