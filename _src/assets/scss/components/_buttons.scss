@@ -35,6 +35,14 @@
   color: $colorItems;
   transition: all ease 0.4s;
 
+  @media all and (min-width: 768px) {
+    width: 9.1rem;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 16rem;
+  }
+
   &:hover {
     background-color: $colorItems;
     color: white;
