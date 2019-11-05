@@ -6,6 +6,11 @@
   margin: 3rem 0 4.5rem 0;
   padding: 0 1.5rem;
 
+  @media all and (min-width: 1200px) {
+    margin: 3rem auto 4.5rem;
+    width: 60%;
+  }
+
   &--small {
     font-family: $fontFamilyText;
     font-size: 1.4rem;

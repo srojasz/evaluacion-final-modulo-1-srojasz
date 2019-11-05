@@ -7,9 +7,11 @@
   width: 4.4rem;
   height: 4.4rem;
   background-color: $colorHeader;
+  background-image: url(../images/ico-menu.svg);
+  @include backgroundImagesPosition;
   border: 0;
 
-  &--img {
+  &--link {
     padding: 1.2rem;
   }
 }
@@ -20,6 +22,8 @@
   border: 0;
   border-radius: 50%;
   background-color: $colorWhite;
+  background-image: url(../images/ico-scroll-down.svg);
+  @include backgroundImagesPosition;
   margin: 5.3rem auto;
 
   & a {
@@ -27,9 +31,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .hero__img {
-    padding: 1.2rem;
   }
 }
 
@@ -98,10 +99,18 @@
   border: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: $colorWhite;
+  background-image: url(../images/ico-arrow.svg);
+  @include backgroundImagesPosition;
   transform: translateY(-50%);
+
+  /*Animation*/
   animation-name: footer;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
+}
+
+.text__missing {
+  @include textMissing;
 }
 
 @keyframes footer {

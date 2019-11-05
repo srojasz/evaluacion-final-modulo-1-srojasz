@@ -4,3 +4,13 @@
   font-size: 2rem;
   line-height: 2.25;
 }
+
+@mixin backgroundImagesPosition {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin textMissing {
+  position: relative;
+  left: -500rem;
+}
