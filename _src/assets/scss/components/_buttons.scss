@@ -9,36 +9,24 @@
   background-color: $colorHeader;
   background-image: url(../images/ico-menu.svg);
   @include backgroundImagesPosition;
-  border: 0;
-  z-index: 3;
-  transition: all ease 2s;
-
-  &--link {
-    padding: 1.2rem;
-  }
 }
 
 .hero__content--button {
+  display: block;
   width: 4.5rem;
   height: 4.5rem;
-  border: 0;
   border-radius: 50%;
+  margin: 5.3rem auto;
   background-color: $colorWhite;
   background-image: url(../images/ico-scroll-down.svg);
   @include backgroundImagesPosition;
-  margin: 5.3rem auto;
-
-  & a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 .main__header--button {
+  display: block;
   width: 7.6rem;
   height: 4.5rem;
+  text-align: center;
   border-radius: 2.25rem;
   border: 2px solid $colorItems;
   background-color: $colorWhite;
@@ -56,23 +44,18 @@
   }
   &:hover {
     background-color: $colorItems;
-    a {
-      color: $colorWhite;
-    }
-  }
-  & a {
-    color: $colorItems;
-    padding: 1rem;
+    color: $colorWhite;
   }
 }
 .main__reasons--button {
   width: 18.4rem;
   height: 4.5rem;
+  display: block;
+  margin: 0 auto;
   background-color: $colorItems;
   border-radius: 2.25rem;
   @include textButton;
   color: $colorWhite;
-  border: 0;
   transition: all ease 1s;
 
   @media all and (min-width: 768px) {
@@ -95,10 +78,10 @@
 }
 
 .footer__button {
+  display: block;
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
-  border: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: $colorWhite;
   background-image: url(../images/ico-arrow.svg);
