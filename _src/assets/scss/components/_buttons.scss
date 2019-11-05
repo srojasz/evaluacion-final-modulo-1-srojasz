@@ -54,7 +54,9 @@
   }
   &:hover {
     background-color: $colorItems;
-    color: white;
+    a {
+      color: white;
+    }
   }
   & a {
     color: $colorItems;
@@ -100,4 +102,17 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: #fff;
   transform: translateY(-50%);
+  animation-name: footer;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes footer {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(-80%);
+  }
 }
