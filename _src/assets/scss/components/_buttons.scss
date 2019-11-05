@@ -6,10 +6,11 @@
   left: 0;
   width: 4.4rem;
   height: 4.4rem;
-  background-color: #0271bc;
+  background-color: $colorHeader;
+  border: 0;
 
   &--img {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 }
 
@@ -18,7 +19,7 @@
   height: 4.5rem;
   border: 0;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: $colorWhite;
   margin: 5.3rem auto;
 
   & a {
@@ -28,7 +29,7 @@
     align-items: center;
   }
   .hero__img {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 }
 
@@ -37,12 +38,10 @@
   height: 4.5rem;
   border-radius: 2.25rem;
   border: 2px solid $colorItems;
-  background-color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 2.25;
+  background-color: $colorWhite;
   color: $colorItems;
+  @include textButton;
+
   transition: all ease 0.4s;
 
   @media all and (min-width: 768px) {
@@ -54,7 +53,9 @@
   }
   &:hover {
     background-color: $colorItems;
-    color: white;
+    a {
+      color: $colorWhite;
+    }
   }
   & a {
     color: $colorItems;
@@ -66,10 +67,8 @@
   height: 4.5rem;
   background-color: $colorItems;
   border-radius: 2.25rem;
-  font-family: $fontFamilyText;
-  font-weight: 500;
-  font-size: 2rem;
-  color: white;
+  @include textButton;
+  color: $colorWhite;
   border: 0;
   transition: all ease 1s;
 
@@ -83,11 +82,11 @@
 
   &:hover {
     transform: scale(1.2);
-    color: white;
+    color: $colorWhite;
   }
 
   & a {
-    color: white;
+    color: $colorWhite;
     padding: 1rem;
   }
 }
@@ -98,6 +97,19 @@
   border-radius: 50%;
   border: 0;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background-color: #fff;
+  background-color: $colorWhite;
   transform: translateY(-50%);
+  animation-name: footer;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes footer {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(-80%);
+  }
 }
