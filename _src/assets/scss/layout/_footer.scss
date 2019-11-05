@@ -1,10 +1,10 @@
 /*Footer*/
 
 .footer {
-  background-color: #304268;
+  background-color: $colorFooter;
   font-family: $fontFamilyText;
   font-size: 1.8rem;
-  color: white;
+  color: $colorWhite;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   align-items: center;
 
   &__content {
-    color: white;
+    color: $colorWhite;
     padding-top: 6rem;
     @media all and (min-width: 768px) {
       display: flex;
@@ -59,7 +59,7 @@
   &__link {
     text-decoration: none;
     padding: 0.3rem 1rem;
-    color: white;
+    color: $colorWhite;
     text-transform: uppercase;
     transition: all ease 0.5s;
 

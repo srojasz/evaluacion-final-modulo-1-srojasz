@@ -2,70 +2,70 @@
 
 .header {
   height: 100vh;
-}
 
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100%;
-  background-image: url(../images/cover-low.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  animation-name: intro;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-
-  @media all and (min-width: 768px) {
-    background-image: url(../images/cover.jpg);
-    animation-name: intro-high;
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    background-image: url(../images/cover-low.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-name: intro;
     animation-duration: 4s;
     animation-iteration-count: 1;
-  }
-}
-
-.hero__content {
-  color: white;
-  width: 29rem;
-  text-align: center;
-
-  @media all and (min-width: 768px) {
-    width: 69rem;
-  }
-
-  @media all and (min-width: 1200px) {
-    width: 73rem;
-  }
-
-  &--title {
-    font-family: "Roboto Slab", serif;
-    font-size: 4.2rem;
-    line-height: 5.5rem;
-    text-transform: uppercase;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1rem;
 
     @media all and (min-width: 768px) {
-      font-size: 8rem;
-      line-height: 10.6rem;
+      background-image: url(../images/cover.jpg);
+      animation-name: intro-high;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+    }
+  }
+
+  .hero__content {
+    color: $colorWhite;
+    width: 29rem;
+    text-align: center;
+
+    @media all and (min-width: 768px) {
+      width: 69rem;
     }
 
     @media all and (min-width: 1200px) {
-      font-size: 10rem;
-      line-height: 13.2rem;
+      width: 73rem;
     }
-  }
 
-  &--text {
-    font-family: "Roboto", serif;
-    font-size: 1.6rem;
-    line-height: 2.1rem;
+    &--title {
+      font-family: $fontFamilyText;
+      font-size: 4.2rem;
+      line-height: 5.5rem;
+      text-transform: uppercase;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
 
-    @media all and (min-width: 768px) {
-      font-size: 2.4rem;
-      line-height: 3.2rem;
+      @media all and (min-width: 768px) {
+        font-size: 8rem;
+        line-height: 10.6rem;
+      }
+
+      @media all and (min-width: 1200px) {
+        font-size: 10rem;
+        line-height: 13.2rem;
+      }
+    }
+
+    &--text {
+      font-family: $fontFamilyText;
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+
+      @media all and (min-width: 768px) {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
     }
   }
 }
